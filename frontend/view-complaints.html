@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All Complaints</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>All Complaints 📋</h1>
+
+<div id="data"></div>
+
+<script>
+
+function loadComplaints() {
+
+    fetch("http://localhost:5000/all-complaints")
+    .then(res => res.json())
+    .then(data => {
+
+        console.log("API RESPONSE:", data);
+
+        // ⭐ FIX: extract complaints correctly
+        let complaints = data.complaints || [];
+
+        let html = "";
+
+        complaints.forEach(c => {
+
+            html += `
+            <div class="card">
+                <h3>${c.title}</h3>
+                <p>Dept: ${c.department}</p>
+                <p>Date: ${c.date}</p>
+                <p>Status: ${c.status}</p>
+                <p>Deadline: ${c.deadline}</p>
+            </div>
+            `;
+        });
+
+        document.getElementById("data").innerHTML = html;
+
+    })
+    .catch(err => {
+        console.log(err);
+        alert("ERROR ❌ " + err);
+    });
+}
+
+// ✔ correct load
+window.onload = loadComplaints;
+
+</script>
+
+</body>
+</html>

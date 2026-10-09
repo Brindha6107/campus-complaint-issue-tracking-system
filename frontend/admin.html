@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🛠️ Admin Panel</h1>
+
+<input type="text" id="search" placeholder="Search..." onkeyup="searchComplaint()">
+
+<div>
+<button onclick="filterType('all')">All</button>
+<button onclick="filterType('expired')">Expired</button>
+<button onclick="filterType('near')">Near</button>
+<button onclick="filterType('active')">Active</button>
+</div>
+
+<div class="summary">
+<div class="box red">Expired <span id="expiredCount">0</span></div>
+<div class="box orange">Near <span id="nearCount">0</span></div>
+<div class="box green">Active <span id="activeCount">0</span></div>
+</div>
+
+<div id="adminData"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

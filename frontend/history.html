@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>History</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>📁 Complaint History</h1>
+
+<div id="history"></div>
+
+<script>
+fetch("http://localhost:5000/admin-all")
+.then(res => res.json())
+.then(data => {
+
+    let html = "";
+
+    data.forEach(c => {
+        html += `
+        <div class="card">
+            <h3>${c.title}</h3>
+            <p>${c.status}</p>
+            <p>${c.date}</p>
+        </div>`;
+    });
+
+    document.getElementById("history").innerHTML = html;
+});
+</script>
+
+</body>
+</html>

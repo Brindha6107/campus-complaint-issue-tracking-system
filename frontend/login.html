@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Campus Complaint System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-container">
+
+    <div class="auth-left">
+        <h1>Campus Complaint System</h1>
+        <p>Smart way to manage complaints 🚀</p>
+    </div>
+
+    <div class="auth-box">
+
+        <h2>Login</h2>
+
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+
+        <!-- CAPTCHA -->
+        <div class="captcha-box">
+            <span id="captchaText"></span>
+            <button onclick="generateCaptcha()">↻</button>
+        </div>
+
+        <input type="text" id="captchaInput" placeholder="Enter CAPTCHA">
+
+        <button onclick="login()">Login</button>
+
+        <p>Don't have account? 
+            <a href="signup.html">Signup</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

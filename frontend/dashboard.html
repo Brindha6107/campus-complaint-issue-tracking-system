@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Premium Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CHART -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body onload="loadUser()">
+
+<div class="main">
+
+    <!-- 🔥 SIDEBAR -->
+    <div class="sidebar">
+
+        <h2>⚡ App</h2>
+
+        <div class="menu" onclick="goTo('complaint.html')">
+            <i class="fa-solid fa-pen"></i> Raise
+        </div>
+
+        <div class="menu" onclick="goTo('monitor.html')">
+            <i class="fa-solid fa-triangle-exclamation"></i> Monitor
+        </div>
+
+        <div class="menu" id="adminMenu" onclick="goTo('admin.html')">
+            <i class="fa-solid fa-user-shield"></i> Admin
+        </div>
+
+        <div class="menu" onclick="goTo('analytics.html')">
+            <i class="fa-solid fa-chart-line"></i> Analytics
+        </div>
+
+        <div class="menu" onclick="goTo('profile.html')">
+            <i class="fa-solid fa-user"></i> Profile
+        </div>
+
+        <div class="menu" onclick="goTo('history.html')">
+            <i class="fa-solid fa-folder"></i> History
+        </div>
+
+        <div class="menu notification" onclick="goTo('notifications.html')">
+            <i class="fa-solid fa-bell"></i> Notifications
+            <span class="badge">3</span>
+        </div>
+
+        <div class="menu logout" onclick="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </div>
+
+    </div>
+
+    <!-- 🔥 CONTENT -->
+    <div class="content">
+
+        <!-- TOP -->
+        <div class="topbar">
+            <h2 id="welcome"></h2>
+            <span id="clock"></span>
+        </div>
+
+        <!-- STATS -->
+        <div class="stats">
+
+            <div class="stat-card">
+                ⏳ <h3>Pending</h3>
+                <p id="pending">0</p>
+            </div>
+
+            <div class="stat-card green">
+                ✅ <h3>Resolved</h3>
+                <p id="resolved">0</p>
+            </div>
+
+            <div class="stat-card red">
+                🚨 <h3>Urgent</h3>
+                <p id="urgent">0</p>
+            </div>
+
+            <div class="stat-card blue">
+                📊 <h3>Total</h3>
+                <p id="total">0</p>
+            </div>
+
+        </div>
+
+        <!-- CHART -->
+        <canvas id="chart"></canvas>
+
+        <!-- ACTIVITY -->
+        <h2>Recent Activity</h2>
+        <div id="activity"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

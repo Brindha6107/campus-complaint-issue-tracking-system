@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Raise Complaint</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #5b86e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #36d1dc;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Raise Complaint 📝</h2>
+
+<!-- USER TYPE -->
+<select id="role" onchange="toggleYear()">
+    <option value="">Select Role</option>
+    <option value="student">Student</option>
+    <option value="faculty">Faculty</option>
+</select>
+
+<!-- NAME -->
+<input type="text" id="name" placeholder="Enter Name">
+
+<!-- EMAIL -->
+<input type="email" id="email" placeholder="Enter Email">
+
+<!-- DEPARTMENT -->
+<select id="department">
+    <option value="">Select Department</option>
+    <option>CSE</option>
+    <option>IT</option>
+    <option>ECE</option>
+    <option>EEE</option>
+    <option>MECH</option>
+    <option>CIVIL</option>
+    <option>AIDS</option>
+    <option>CSBS</option>
+</select>
+
+<!-- YEAR (ONLY STUDENT) -->
+<select id="year" style="display:none;">
+    <option value="">Select Year</option>
+    <option>1st Year</option>
+    <option>2nd Year</option>
+    <option>3rd Year</option>
+    <option>4th Year</option>
+</select>
+
+<!-- TITLE -->
+<input type="text" id="title" placeholder="Complaint Title">
+
+<!-- DESCRIPTION -->
+<textarea id="description" placeholder="Describe your complaint"></textarea>
+<select id="priority">
+    <option value="">Select Priority</option>
+    <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+</select>
+<!-- 📸 Upload Image -->
+<label style="margin-top:10px;">Upload Issue Image 📷</label>
+<input type="file" id="image" accept="image/*">
+
+<!-- 👁 Preview -->
+<img id="preview" style="width:100%; margin-top:10px; display:none; border-radius:10px;">
+
+<!-- SUBMIT -->
+<button onclick="submitComplaint()">Submit Complaint</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

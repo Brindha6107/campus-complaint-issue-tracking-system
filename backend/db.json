@@ -1,0 +1,234 @@
+{
+  "users": [
+    {
+      "name": "birundha",
+      "email": "brindha6107@gmail.com",
+      "password": "Tamilnadu",
+      "role": "student"
+    },
+    {
+      "name": "harini",
+      "email": "brindha6107@gmail.com",
+      "password": "Tamilnadu",
+      "role": "student"
+    },
+    {
+      "name": "suren",
+      "email": "suren1234@gmail.com",
+      "password": "12345678",
+      "role": "faculty"
+    },
+    {
+      "name": "jkkk",
+      "email": "brindha6107@gmail.com",
+      "password": "Tamilnadu",
+      "role": "faculty"
+    },
+    {
+      "name": "harini",
+      "email": "brindha6107@gmail.com",
+      "password": "Tamilnadu",
+      "role": "faculty"
+    },
+    {
+      "name": "Brindha A",
+      "email": "brindha6107@gmail.com",
+      "password": "Tamilnadu",
+      "role": "student"
+    },
+    {
+      "email": "brindha6107@gmail.com",
+      "password": "Tamilnadu",
+      "role": "student"
+    }
+  ],
+  "complaints": [
+    {
+      "id": 1776147673531,
+      "email": "brindha6107@gmail.com",
+      "title": "TRANSPORTTTT ISSUE",
+      "department": "CSE",
+      "description": "STANDING",
+      "status": "Closed",
+      "createdAt": "2026-04-14T06:21:13.531Z",
+      "manualClosed": true
+    },
+    {
+      "id": 1776149907739,
+      "email": "brindha6107@gmail.com",
+      "title": "kfnvkf",
+      "department": "cjdhv",
+      "description": "djvi",
+      "status": "Pending",
+      "forwarded": false,
+      "createdAt": "2026-04-14T06:58:27.739Z"
+    },
+    {
+      "id": 1776151610113,
+      "email": "brindha6107@gmail.com",
+      "title": "food",
+      "department": "ece",
+      "description": "food management",
+      "status": "Closed",
+      "forwarded": false,
+      "createdAt": "2026-04-14T07:26:50.113Z",
+      "manualClosed": true
+    },
+    {
+      "id": 1776167157479,
+      "email": "brindha6107@gmail.com",
+      "title": "transport issue",
+      "department": "CSE",
+      "description": "standing ",
+      "status": "Pending",
+      "forwarded": false,
+      "createdAt": "2026-04-14T11:45:57.479Z"
+    },
+    {
+      "id": 1776170816624,
+      "name": "birundha",
+      "email": "brindha6107@gmail.com",
+      "role": "faculty",
+      "department": "ECE",
+      "year": "",
+      "title": "jsnc",
+      "description": "sncejc",
+      "status": "Pending",
+      "forwarded": false,
+      "createdAt": "2026-04-14T12:46:56.624Z"
+    },
+    {
+      "id": 1776171685403,
+      "name": "harini",
+      "email": "brindha6107@gmail.com",
+      "role": "faculty",
+      "department": "MECH",
+      "year": "",
+      "title": "gggg",
+      "description": "overwrite",
+      "status": "Closed",
+      "forwarded": false,
+      "createdAt": "2026-04-14T13:01:25.403Z"
+    },
+    {
+      "id": 1777613653023,
+      "email": "brindha6107@gmail.com",
+      "role": "faculty",
+      "department": "ECE",
+      "year": "",
+      "title": "exam schedulation",
+      "description": "time not suited",
+      "status": "Pending",
+      "forwarded": false,
+      "createdAt": "2026-05-01T05:34:13.023Z"
+    },
+    {
+      "id": 1777711738536,
+      "email": "",
+      "role": "student",
+      "department": "",
+      "year": "",
+      "title": "",
+      "description": "",
+      "priority": "Medium",
+      "image": "",
+      "createdAt": "2026-05-02T08:48:58.536Z"
+    },
+    {
+      "id": 1778494762059,
+      "email": "",
+      "role": "",
+      "department": "",
+      "year": "",
+      "title": "",
+      "description": "",
+      "priority": "Medium",
+      "image": "",
+      "createdAt": "2026-05-11T10:19:22.059Z"
+    },
+    {
+      "id": 1778686707717,
+      "email": "brindha6107@gmail.com",
+      "role": "faculty",
+      "department": "AIDS",
+      "year": "",
+      "title": "hh",
+      "description": "gfvtg",
+      "priority": "Medium",
+      "image": "",
+      "createdAt": "2026-05-13T15:38:27.717Z"
+    },
+    {
+      "id": 1778687109230,
+      "email": "brindha6107@gmail.com",
+      "role": "faculty",
+      "department": "CIVIL",
+      "year": "",
+      "title": "transport",
+      "description": "dwf",
+      "priority": "Medium",
+      "image": "",
+      "createdAt": "2026-05-13T15:45:09.230Z"
+    },
+    {
+      "id": 1778688019741,
+      "email": "brindha6107@gmail.com",
+      "role": "student",
+      "department": "MECH",
+      "year": "",
+      "title": "fan workage",
+      "description": "not in proper way",
+      "priority": "Medium",
+      "image": "",
+      "createdAt": "2026-05-13T16:00:19.741Z"
+    },
+    {
+      "id": 1778688169328,
+      "email": "brindha6107@gmail.com",
+      "role": "student",
+      "department": "AIDS",
+      "year": "",
+      "title": "light issue",
+      "description": "to monitors the lights",
+      "priority": "Medium",
+      "image": "",
+      "createdAt": "2026-05-13T16:02:49.328Z"
+    },
+    {
+      "id": 1778731636049,
+      "email": "brindha6107@gmail.com",
+      "role": "student",
+      "department": "MECH",
+      "year": "",
+      "title": "transport",
+      "description": "not seats are available",
+      "priority": "Medium",
+      "image": "",
+      "createdAt": "2026-05-14T04:07:16.049Z"
+    },
+    {
+      "id": 1778731975832,
+      "email": "brindha6107@gmail.com",
+      "role": "student",
+      "department": "ECE",
+      "year": "",
+      "title": "fan workage",
+      "description": "in a",
+      "priority": "Medium",
+      "image": "",
+      "createdAt": "2026-05-14T04:12:55.832Z"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": 1776149950835,
+      "type": "student",
+      "name": "birundha",
+      "department": "cjdhv",
+      "year": "2nd",
+      "phone": "9487404543",
+      "description": "transport issue",
+      "createdAt": "2026-04-14T06:59:10.835Z"
+    }
+  ]
+}
