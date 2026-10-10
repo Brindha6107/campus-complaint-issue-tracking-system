@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
    SIGNUP
 ======================= */
 function signup() {
-    fetch("http://localhost:5000/signup", {
+    fetch("/signup", {
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body: JSON.stringify({
@@ -105,7 +105,7 @@ function login() {
         return;
     }
 
-    fetch("http://localhost:5000/login", {
+    fetch("/login", {
         method: "POST",
         headers: {"Content-Type":"application/json"},
         body: JSON.stringify({
@@ -139,7 +139,7 @@ function submitComplaint() {
 
         const imageBase64 = reader.result;
 
-        fetch("http://localhost:5000/complaint", {
+        fetch("/complaint", {
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify({
@@ -173,7 +173,7 @@ function loadMonitor() {
 
     let user = JSON.parse(localStorage.getItem("user"));
 
-    fetch("http://localhost:5000/monitor/" + user.email)
+    fetch("/monitor/" + user.email)
     .then(res => res.json())
     .then(data => {
 
@@ -213,7 +213,7 @@ let allComplaints = [];
 
 function loadAdmin() {
 
-    fetch("http://localhost:5000/admin-all")
+    fetch("/admin-all")
     .then(res => res.json())
     .then(data => {
 
@@ -304,7 +304,7 @@ function searchComplaint() {
 ======================= */
 function resolveComplaint(id) {
 
-    fetch("http://localhost:5000/resolve/" + id, {
+    fetch("/resolve/" + id, {
         method: "PUT"
     })
     .then(() => {
@@ -318,7 +318,7 @@ function resolveComplaint(id) {
 ======================= */
 function deleteComplaint(id) {
 
-    fetch("http://localhost:5000/delete/" + id, {
+    fetch("/delete/" + id, {
         method: "DELETE"
     })
     .then(() => {

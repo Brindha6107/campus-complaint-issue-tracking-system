@@ -1,12 +1,20 @@
 const express = require("express");
 const fs = require("fs");
 const cors = require("cors");
-
+const path = require("path");
 const app = express();
 app.use(cors());
 app.use(express.json());
+// Serve the frontend from the sibling frontend folder
+const FRONTEND_DIR = path.join(__dirname, "../frontend");
 
-const DB_FILE = "./db.json";
+app.use(express.static(FRONTEND_DIR));
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(FRONTEND_DIR, "index.html"));
+});
+
+const DB_FILE = path.join(__dirname, "db.json");
 
 /* ======================= */
 function readDB() {
@@ -160,8 +168,8 @@ app.delete("/delete/:id", (req, res) => {
     res.send("Deleted");
 });
 
+const PORT = process.env.PORT || 5000;
 
-/* ======================= */
-app.listen(5000, () => {
-    console.log("Server running on 5000 🚀");
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Campus Complaint System running on port ${PORT}`);
 });
